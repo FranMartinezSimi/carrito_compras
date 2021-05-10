@@ -1,0 +1,85 @@
+body {
+	max-width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+#productos {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+}
+
+#carritoCompras {
+	position: relative;
+	right: auto;
+}
+
+.titlo {
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 768px){
+	body {
+		max-width: 80%;
+		text-align: center;
+	}
+	#productos{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		align-items: center;
+	}
+	.card {
+		width: 400px;
+	}
+}
+
+img {
+	padding: 4px;
+	border-radius: 20px;
+}
+
+.card {
+	border-width: 2px;
+	width: 330px;
+	text-align: center;
+	justify-content: center;
+	margin: 10px;
+	border-radius: 30px;
+	box-shadow: 4px 4px 2px 2px rgba(0,0,0,0.3);
+	padding: 10px;
+}
+
+h1 {
+	background-color: orange;
+	color: white;
+	font-family: 'Open Sans';
+	justify-content: center;
+	padding: 40px;
+	display: block;
+	width: auto;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-style: inherit;
+}
+button {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	color: white;
+	background-color: orange;
+	padding: 10px;
+	border-style: none;
+	border-radius: 3px;
+	;
+}
+button:hover {
+	background-color: rgb(156, 105, 9);
+}
